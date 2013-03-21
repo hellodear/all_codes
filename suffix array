@@ -1,0 +1,90 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+#define MAX 10000000
+#include<stdlib.h>
+#include<string.h>
+char s[MAX];
+int p[MAX];
+int bucket[MAX],nbucket[MAX];
+struct suffix
+{
+       int idx;
+}pos[MAX];
+int H=0;
+bool cmp(struct suffix i,struct suffix j)
+{
+    if(H==0)
+    {
+         return s[i.idx]<s[j.idx];    
+    }
+    else
+    {
+          if(bucket[i.idx]==bucket[j.idx])
+          {
+              return bucket[i.idx+H]<bucket[j.idx+H];                            
+          }
+          else
+          {
+               return bucket[i.idx]<bucket[j.idx];
+          }
+    }
+}
+bool cmp1(struct suffix *i,struct suffix *j)
+{
+     if(H==0)
+     {
+           if(s[i->idx]==s[j->idx])
+           return true;
+           else
+           return false;  
+     }else{
+     if(bucket[i->idx]==bucket[j->idx] && bucket[i->idx+H]==bucket[j->idx+H])
+     return true;
+     else
+     return false;
+     }
+}
+int update(int l)
+{
+     int id=0,start=0,c=0;
+       for(int i=0;i<l;i++)
+       {
+             if(i>0 && !cmp1(&pos[i],&pos[i-1]))  
+             {
+                    id++;
+                    start=i;
+             }
+             if(i!=start)
+             c=1;
+             nbucket[pos[i].idx]=id;
+       }     
+       memcpy(bucket,nbucket,4*l);
+       return c;
+}
+void suffixsort(int l)
+{
+     int i=0;
+     int c=0;
+     for(i=0;i<l;i++)
+     {
+        pos[i].idx=i;             
+     }
+     sort(pos,pos+l,cmp);
+     c=update(l);
+     for(H=1;c;H*=2)
+     {
+              sort(pos,pos+l,cmp);      
+              c=update(l);
+     }
+     return;
+}
+int main()
+{
+    gets(s);
+    int l=strlen(s)+1;
+    suffixsort(l);
+    for(int i=1;i<l;i++)
+    printf("%d\n",pos[i].idx);
+    return 0;
+}
