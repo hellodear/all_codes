@@ -1,0 +1,14 @@
+const int MAX = 10010896;
+const int LMT = 3164;
+int flag[MAX>>6], mark[MAX];
+
+#define ifc(x) (flag[x>>6]&(1<<((x>>1)&31)))
+#define isc(x) (flag[x>>6]|=(1<<((x>>1)&31)))
+
+void sieve() {
+  int i, j, k;
+	for(i=3; i<LMT; i+=2)
+		if(!ifc(i))
+			for(j=i*i, k=i<<1; j<MAX; j+=k)
+				isc(j);
+}
