@@ -21,6 +21,7 @@
 #define p(x) printf("%d\n",x);
 #define FR(i,n) for(int (i)=0;(i)<(n);(i)++)
 #define FRE(i,n) for(int (i)=0;(i)<=(n);(i)++)
+#define pb(x) push_back(x)
 
 typedef long long int ll;
 typedef unsigned long long int ull;
