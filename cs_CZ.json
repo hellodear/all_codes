@@ -1,0 +1,11 @@
+{
+  "CampaignToShow":"Toggle",
+  "TimeGap":7,
+  "RedirectionUri_PS":"http://www.adobe.com/go/PSXW_download_PS",
+  "RedirectionUri_LR":"http://www.adobe.com/go/PSXW-download_Lr",
+  "UsersToTarget":1,
+  "PSHeadlineString":"Chcete vytvořit dokonalý vzhled?",
+  "LRHeadlineString":"Chcete mít všechny své\nfotografie stále u sebe?",
+  "PSContentString":"Vyzkoušejte efekty filtrů v aplikaci Photoshop CC, díky kterým\ndosáhnete ještě lepších výsledků.",
+  "LRContentString":"Aplikace Lightroom je všechny ukládá na jednom místě a navíc nabízí ty nejlepší nástroje pro úpravy.\nDostanete se k nim z telefonu, z počítače i přes web."
+}
