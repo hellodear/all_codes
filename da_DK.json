@@ -1,0 +1,11 @@
+{
+  "CampaignToShow":"Toggle",
+  "TimeGap":7,
+  "RedirectionUri_PS":"http://www.adobe.com/go/PSXW_download_PS",
+  "RedirectionUri_LR":"http://www.adobe.com/go/PSXW-download_Lr",
+  "UsersToTarget":1,
+  "PSHeadlineString":"Vil du gerne kunne oprette det perfekte udseende?",
+  "LRHeadlineString":"Vil du have adgang til alle dine\nfotos, uanset hvor du er?",
+  "PSContentString":"Nu kan du få endnu bedre resultater –\nprøv filtereffekterne i Photoshop CC",
+  "LRContentString":"Med Lightroom er de samlet på ét sted, og du får de bedste redigeringsværktøjer –\nfå adgang til dem på din telefon, computer eller via internettet."
+}
