@@ -1,0 +1,11 @@
+{
+  "CampaignToShow":"Toggle",
+  "TimeGap":7,
+  "RedirectionUri_PS":"http://www.adobe.com/go/PSXW_download_PS",
+  "RedirectionUri_LR":"http://www.adobe.com/go/PSXW-download_Lr",
+  "UsersToTarget":1,
+  "PSHeadlineString":"喜歡建立完美的 Look 嗎？",
+  "LRHeadlineString":"想要您的相片\n隨處可見嗎？",
+  "PSContentString":"使用 Photoshop CC 濾鏡效果 –\n將相片提升至另一層次",
+  "LRContentString":"Lightroom 將相片集合於一處，並提供最佳的編輯工具 –\n隨時隨地從手機、桌上電腦或網路加以存取。"
+}
